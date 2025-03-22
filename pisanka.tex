@@ -1,0 +1,76 @@
+\documentclass{book}
+\usepackage{graphicx,multirow}
+\usepackage{dashrule}
+\usepackage{tabularx}
+\usepackage{adjustbox}
+\usepackage[a4paper,margin=1cm,nohead]{geometry}
+
+\newsavebox\myboxX
+\newsavebox\myboxx
+\newdimen\heightX
+\newdimen\heightx
+
+\newcommand{\setline}[2]{%
+    \savebox\myboxX{\scalebox{#1}{X}}%
+    \savebox\myboxx{\scalebox{#1}{x}}%
+    \heightX=\ht\myboxX
+    \heightx=\ht\myboxx
+    \noindent\ooalign{\rule[\heightX]{\textwidth}{.1pt}\cr
+    \noindent\hdashrule[\heightx]{\textwidth}{.1pt}{1mm}\cr
+    \noindent\rule{\textwidth}{.1pt}\cr
+\noindent\scalebox{#1}{#2}\scalebox{#1}{\pdfliteral{q 1 Tr [.1 .4]0 d .1 w}#2#2#2#2#2\pdfliteral{Q}}}%
+}
+
+\begin{document}
+\pagestyle{empty}\noindent
+\noindent\setline{3}{$\alpha$}\vspace{.75cm}
+\setline{3}{$\beta$}\vspace{.75cm}
+\setline{3}{$\gamma$}\vspace{.75cm}
+\setline{3}{$\delta$}\vspace{.75cm} \setline{3}{$\varepsilon$}\vspace{.75cm}
+ \setline{3}{$\zeta$}\vspace{.75cm}
+ \setline{3}{$\eta$}\vspace{.75cm}
+ \setline{3}{$\theta$}\vspace{.75cm}
+ \setline{3}{$\iota$}\vspace{.75cm}
+\setline{3}{$\kappa$}\vspace{.75cm}
+ \setline{3}{$\lambda$}\vspace{.75cm}
+\setline{3}{$\mu$}\vspace{.75cm}
+  \setline{3}{$\nu$}\vspace{.75cm}
+  \setline{3}{$\xi$}\vspace{.75cm}
+  \setline{3}{$o$}\vspace{.75cm}
+  \setline{3}{$\pi$}\vspace{.75cm}
+\setline{3}{$\rho$}\vspace{.75cm}
+ \setline{3}{$\sigma$}\vspace{.75cm}
+\setline{3}{$\tau$}\vspace{.75cm}
+\setline{3}{$\upsilon$}\vspace{.75cm}
+\setline{3}{$\phi$}\vspace{.75cm}
+\setline{3}{$\chi$}\vspace{.75cm}
+\setline{3}{$\psi$}\vspace{.75cm}
+\setline{3}{$\omega$}\vspace{.75cm}
+
+\newpage
+\noindent \setline{3}{$A$}\vspace{.75cm}
+\setline{3}{$B$}\vspace{.75cm}
+  \setline{3}{$\Gamma$}\vspace{.75cm}
+ \setline{3}{$\Delta$}\vspace{.75cm}
+ \setline{3}{$E$}\vspace{.75cm}
+\setline{3}{$Z$}\vspace{.75cm}
+ \setline{3}{$H$}\vspace{.75cm} \setline{3}{$\Theta$}\vspace{.75cm}
+ \setline{3}{$I$}\vspace{.75cm}
+ \setline{3}{$K$}\vspace{.75cm}
+ \setline{3}{$\Lambda$}\vspace{.75cm}
+ \setline{3}{$M$}\vspace{.75cm}
+ \setline{3}{$N$}\vspace{.75cm}
+\setline{3}{$\Xi$}\vspace{.75cm}
+ \setline{3}{$O$}\vspace{.75cm}
+ \setline{3}{$\Pi$}\vspace{.75cm}
+ \setline{3}{$P$}\vspace{.75cm}
+ \setline{3}{$\Sigma$}\vspace{.75cm}
+ \setline{3}{$T$}\vspace{.75cm}
+ \setline{3}{$Y$}\vspace{.75cm}
+ \setline{3}{$\Phi$}\vspace{.75cm}
+ \setline{3}{$X$}\vspace{.75cm}
+ \setline{3}{$\Psi$}\vspace{.75cm}
+ \setline{3}{$\Omega$}\vspace{.75cm}
+\newpage
+
+\end{document}
